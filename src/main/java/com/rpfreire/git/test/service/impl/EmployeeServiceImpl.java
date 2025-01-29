@@ -28,7 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee getEmployeeById(String employeeId) {
-        return employees.stream().filter(employee -> employee.getEmployeeId().equals(employeeId)).findFirst().orElse(null);
+        return employees.stream().filter(employee -> employee.getEmployeeId().equals(employeeId)).findFirst().get();
     }
 
 }
