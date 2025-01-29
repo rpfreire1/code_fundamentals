@@ -1,6 +1,7 @@
 package com.rpfreire.git.test.service.impl;
 
 import com.rpfreire.git.test.entity.Employee;
+import com.rpfreire.git.test.error.EmployeeNotFoundException;
 import com.rpfreire.git.test.service.EmployeeService;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +29,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee getEmployeeById(String employeeId) {
-        return employees.stream().filter(employee -> employee.getEmployeeId().equals(employeeId)).findFirst().get();
+        return employees.stream().filter(
+                employee -> employee.getEmployeeId().
+                        equals(employeeId)).
+                findFirst().orElseThrow(()->new EmployeeNotFoundException("Employee with Id "+employeeId+"not found"));
     }
 
 }
