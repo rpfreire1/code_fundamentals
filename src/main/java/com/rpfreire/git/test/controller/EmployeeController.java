@@ -4,6 +4,7 @@ import com.rpfreire.git.test.entity.Employee;
 import com.rpfreire.git.test.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -37,6 +38,11 @@ public class EmployeeController {
     public ResponseEntity<Employee> getEmployeeById(@PathVariable String id){
 
         return ResponseEntity.ok(employeeService.getEmployeeById(id));
+    }
+
+    @DeleteMapping(value = "/{id}",produces = "application/json")
+    public String deleteEmployeeById(@PathVariable String id){
+        return employeeService.deleteEmployeeById(id);
     }
 
 
