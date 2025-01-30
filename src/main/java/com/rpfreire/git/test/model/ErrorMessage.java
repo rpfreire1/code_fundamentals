@@ -1,4 +1,4 @@
-package com.rpfreire.git.test.entity;
+package com.rpfreire.git.test.model;
 
 import org.springframework.http.HttpStatus;
 

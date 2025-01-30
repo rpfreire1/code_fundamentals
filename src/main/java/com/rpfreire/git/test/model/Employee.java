@@ -1,4 +1,4 @@
-package com.rpfreire.git.test.entity;
+package com.rpfreire.git.test.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

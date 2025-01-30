@@ -1,6 +1,6 @@
 package com.rpfreire.git.test.service;
 
-import com.rpfreire.git.test.entity.Employee;
+import com.rpfreire.git.test.model.Employee;
 
 import java.util.List;
 

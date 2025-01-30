@@ -1,6 +1,6 @@
 package com.rpfreire.git.test.controller;
 
-import com.rpfreire.git.test.entity.Employee;
+import com.rpfreire.git.test.model.Employee;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

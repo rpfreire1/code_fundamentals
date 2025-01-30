@@ -1,6 +1,6 @@
 package com.rpfreire.git.test.error;
 
-import com.rpfreire.git.test.entity.ErrorMessage;
+import com.rpfreire.git.test.model.ErrorMessage;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

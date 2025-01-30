@@ -1,6 +1,6 @@
 package com.rpfreire.git.test.controller;
 
-import com.rpfreire.git.test.entity.Employee;
+import com.rpfreire.git.test.model.Employee;
 import com.rpfreire.git.test.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

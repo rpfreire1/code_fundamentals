@@ -1,6 +1,6 @@
 package com.rpfreire.git.test.service.impl;
 
-import com.rpfreire.git.test.entity.Employee;
+import com.rpfreire.git.test.model.Employee;
 import com.rpfreire.git.test.error.EmployeeNotFoundException;
 import com.rpfreire.git.test.service.EmployeeService;
 import org.springframework.stereotype.Service;
