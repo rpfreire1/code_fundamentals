@@ -3,6 +3,7 @@ package com.rpfreire.git.test.controller;
 import com.rpfreire.git.test.model.Employee;
 import com.rpfreire.git.test.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/v1/employee")
 public class EmployeeController {
+    @Qualifier("employeeServiceImpl")
     @Autowired
     private EmployeeService employeeService;
 
