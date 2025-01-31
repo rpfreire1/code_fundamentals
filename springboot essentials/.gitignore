@@ -36,7 +36,3 @@ out/
 ### VS Code ###
 .vscode/
 
-
-/springboot essentials/.idea
-/springboot essentials/.gradle
-/springboot essentials/.build
